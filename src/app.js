@@ -50,6 +50,12 @@ var charaLayer = cc.Layer.extend({
     sprite10.setPosition(size.width * 0.3, size.height * 0.3);
     sprite10.setScale(0.8);
     this.addChild(sprite10, 0);
+
+
+    var sprite11 = cc.Sprite.create(res.chara_enemy_4);
+    sprite11.setPosition(size.width * 0.5, size.height * 0.4);
+    sprite11.setScale(0.8);
+    this.addChild(sprite11, 0);
   }
 });
 
@@ -85,7 +91,7 @@ var particleLayer = cc.Layer.extend({
 //属性とスキルレベルと座標を与えてパーティクルを生成する関数
   skillParticle: function(attrib) {
     var skillName = ["fire", "laser", "exp"];
-    var x = [472, 472, 472, 370, 350, 357, 370, 431, 272, 579];
+    var x = [472, 472, 472, 370, 350, 357, 370, 471, 312, 619];
     var y = [90, 90, 90, 155 , 155, 155, 155, 200, 347, 339];
     var num2 = [4, 5, 4];
     for(var i = 1; i < num2[attrib]; i++){
